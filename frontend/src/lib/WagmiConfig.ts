@@ -2,7 +2,7 @@ import { http, createConfig } from 'wagmi'
 
 // 5ire Testnet Config
 
-const _5ireTestnetConfig = {
+export const _5ireTestnetConfig = {
     id: 997,
     name: 'T5IRE',
     network: '5ireChain Thunder Testnet',
@@ -22,7 +22,7 @@ const _5ireTestnetConfig = {
 
 // 5ire Mainnet Config
 
-const _5ireMainnetConfig = {
+export const _5ireMainnetConfig = {
     id: 995,
     name: '5ireChain',
     network: '5ireChain Mainnet',
