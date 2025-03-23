@@ -17,7 +17,16 @@ declare module "hardhat/types/runtime" {
       name: "BettingApp",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.BettingApp__factory>;
+    getContractFactory(
+      name: "BettingApp",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.BettingApp__factory>;
 
+    getContractAt(
+      name: "BettingApp",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.BettingApp>;
     getContractAt(
       name: "BettingApp",
       address: string | ethers.Addressable,
@@ -28,7 +37,16 @@ declare module "hardhat/types/runtime" {
       name: "BettingApp",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.BettingApp>;
+    deployContract(
+      name: "BettingApp",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.BettingApp>;
 
+    deployContract(
+      name: "BettingApp",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.BettingApp>;
     deployContract(
       name: "BettingApp",
       args: any[],
